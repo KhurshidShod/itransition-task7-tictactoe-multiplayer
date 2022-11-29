@@ -11,7 +11,7 @@ function Register({ setIsAuth }) {
   const signUp = async () => {
 
     console.log(user)
-   await Axios.post("/signup", user).then((res) => {
+   await Axios.post("https://itransition-task7-tictactoe.herokuapp.com/signup", user).then((res) => {
       const { token, userId, firstName, lastName, username, hashedPassword } =
         res.data;
       cookies.set("token", token);
