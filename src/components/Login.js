@@ -11,7 +11,7 @@ function Login({ setIsAuth }) {
 
   const cookies = new Cookies();
   const login = () => {
-    Axios.post("/login", {
+    Axios.post("https://itransition-task7-tictactoe.herokuapp.com/login", {
       username,
       password,
     }).then((res) => {
